@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.Sort
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -46,7 +47,7 @@ fun ContactsScreen(
                 title = { Text(stringResource(R.string.app_name)) },
                 actions = {
                     IconButton(onClick = { showSortBottomSheet = true }) {
-                        Icon(Icons.Default.Sort, contentDescription = stringResource(R.string.menu_sort))
+                        Icon(Icons.AutoMirrored.Filled.Sort, contentDescription = stringResource(R.string.menu_sort))
                     }
                     
                     IconButton(onClick = { showFilterBottomSheet = true }) {
